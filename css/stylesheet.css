@@ -1,0 +1,174 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{
+	font-weight: normal;
+	margin: 0;
+	padding: 0;
+	scroll-behavior: smooth;
+}
+
+#homeHeader{
+	background-image: url(https://clone-webpage.s3.amazonaws.com/images/header-bg.jpg);
+	padding-bottom: 200px;
+	background-size: cover;
+	background-position: center;
+}
+
+nav ul{
+	list-style: none;
+	padding: 0% 12% 0% 12%;
+}
+
+.barMenu{
+	background-color: #212529;
+}
+
+#Studio-tab{
+	color: #fed136;
+	font-weight: bold;
+	letter-spacing: 1px;
+	font-size: 24px;
+}
+
+.right-alignMenu{
+	float: right;
+}
+
+.menu{
+	overflow: hidden;
+}
+
+.menu li{
+	float: left;
+	padding: 25px 15px 20px 15px;
+}
+
+.menu a{
+	text-align: center;
+	text-decoration: none;
+	color: #f8f9fa;
+	font-family: montserrat;
+}
+
+.greetingMsg{
+	padding-top: 200px;
+	color: white;
+	text-align: center;
+}
+
+article{
+	font-family: montserrat;
+	text-align: center;
+}
+
+/*-- Welcome message --*/
+
+h1{
+	font-style: italic;
+	font-size: 42px;
+}
+
+.greetingMsg p{
+	font-family: montserrat;
+	color: white;
+	font-size: 72px;
+	font-weight: bold;
+	padding: 40px 0px
+}
+
+button{
+	color: white;
+	font-weight: bold;
+	font-family: montserrat;
+	font-size: 18px;
+	text-decoration: none;
+	padding: 20px 35px;
+	border-radius: 4px;
+	border-style: none;
+	background-color: #fed136;
+ }
+
+/*-- Article --*/
+article p{
+	padding-bottom: 50px;
+}
+
+h2{
+	padding: 90px 0px 10px 0px;
+	font-weight: bold;
+	font-size: 40px;
+}
+
+/*-- Sections --*/
+h3{
+	font-size: 24px;
+	font-weight: bold;
+	padding: 15px 0px;
+}
+
+.Services{
+	display: flex;
+	padding: 0% 10%;
+}
+
+section{
+	padding: 0% 2%;
+}
+
+section p{
+	line-height: 1.5;
+}
+
+.p-italic{
+	font-style: italic;
+}
+
+p{
+	font-family: roboto slab;
+	color: gray;
+	font-size: 20px;
+}
+
+/*-- Portfolio --*/
+
+#portfolioArticle{
+	background-color: whitesmoke;
+}
+
+.portfolioSection{
+	background-color: white;
+}
+
+/*-- Footer --*/
+
+footer{
+	font-family: montserrat;
+	display: block;
+	text-align: center;
+	font-size: 14px;
+}
+
+.borderedFooter{
+	border-top: 2px solid #212529;
+}
+
+footer p{
+	float: left;
+	font-family: montserrat;
+	font-size: 14px;
+	color: #212529;
+	padding: 30px 0% 30px 12%;
+}
+
+footer a{
+	padding: 0 10px;
+	text-decoration: none;
+	color: #fed136;
+}
+
+.footerLinks{
+	float: right;
+	padding: 30px 12% 30px 0%;
+}
+
