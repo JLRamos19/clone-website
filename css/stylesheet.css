@@ -134,11 +134,36 @@ p{
 
 #portfolioArticle{
 	background-color: whitesmoke;
+	padding: 0 10%;
 }
 
 .portfolioSection{
 	background-color: white;
+	display: block;
+	margin: auto;
+	padding: 0px;
+	width: 32%;
 }
+
+#portfolioTop{
+	display: flex;
+	padding: 10px;
+}
+
+#portfolioBottom{
+	display: flex;
+	padding: 10px 10px 100px;
+	
+}
+
+.portfolioSection img{
+	width: 100%;
+}
+
+.portfolioSection p{
+	margin: -20px 0;
+}
+
 
 /*-- Footer --*/
 
