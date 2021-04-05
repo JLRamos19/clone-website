@@ -164,6 +164,48 @@ p{
 	margin: -20px 0;
 }
 
+/*-- About --*/
+#aboutArticle div{
+	height: 400px;
+}
+
+#aboutArticle img{
+	width: 150px;
+	border: thick solid lightgray;
+	border-radius: 50%;
+}
+
+.textLeft{
+	padding: 0;
+	float: left;
+	width: 20%;
+	text-align: right;
+}
+
+
+.textRight{
+	padding: 0;
+	float: right;
+	width: 20%;
+	text-align: left;
+}
+
+/*-- Team --*/
+
+#teamArticle div{
+	display: flex;
+	justify-content: center;
+}
+
+.teamProfilePictures{
+	width: 200px;
+	border-radius: 50%;
+	border: thick solid lightgray;
+}
+
+#teamBottomParagraph{
+	margin: 0 23%;
+}
 
 /*-- Footer --*/
 
