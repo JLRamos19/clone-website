@@ -1,12 +1,61 @@
 @charset "utf-8";
 /* CSS Document */
 
+/* General */
+
 *{
 	font-weight: normal;
 	margin: 0;
 	padding: 0;
 	scroll-behavior: smooth;
+	text-align: center;
+	
 }
+
+body{
+	min-width: 800px;
+}
+
+/* Sections */
+
+section{
+	padding: 0% 2%;
+}
+
+section p{
+	line-height: 1.5;
+}
+
+.p-italic{
+	font-style: italic;
+}
+
+p{
+	font-family: roboto slab;
+	color: gray;
+	font-size: 20px;
+}
+
+/* Headings */
+
+h1{
+	font-style: italic;
+	font-size: 42px;
+}
+
+h2{
+	padding: 90px 0px 10px 0px;
+	font-weight: bold;
+	font-size: 40px;
+}
+
+h3{
+	font-size: 24px;
+	font-weight: bold;
+	padding: 15px 0px;
+}
+
+/* Menu */
 
 #homeHeader{
 	background-image: url(https://clone-webpage.s3.amazonaws.com/images/header-bg.jpg);
@@ -17,7 +66,6 @@
 
 nav ul{
 	list-style: none;
-	padding: 0% 12% 0% 12%;
 }
 
 .barMenu{
@@ -37,6 +85,7 @@ nav ul{
 
 .menu{
 	overflow: hidden;
+	padding: 0 5%;
 }
 
 .menu li{
@@ -64,10 +113,6 @@ article{
 
 /*-- Welcome message --*/
 
-h1{
-	font-style: italic;
-	font-size: 42px;
-}
 
 .greetingMsg p{
 	font-family: montserrat;
@@ -94,41 +139,17 @@ article p{
 	padding-bottom: 50px;
 }
 
-h2{
-	padding: 90px 0px 10px 0px;
-	font-weight: bold;
-	font-size: 40px;
-}
+
 
 /*-- Sections --*/
-h3{
-	font-size: 24px;
-	font-weight: bold;
-	padding: 15px 0px;
-}
+
 
 .Services{
 	display: flex;
 	padding: 0% 10%;
 }
 
-section{
-	padding: 0% 2%;
-}
 
-section p{
-	line-height: 1.5;
-}
-
-.p-italic{
-	font-style: italic;
-}
-
-p{
-	font-family: roboto slab;
-	color: gray;
-	font-size: 20px;
-}
 
 /*-- Portfolio --*/
 
@@ -169,24 +190,78 @@ p{
 	height: 400px;
 }
 
+.aboutImageBox{
+	
+}
+.aboutBlock{
+	display: flex;
+	flex-direction: column;
+}
 #aboutArticle img{
+	margin: auto;
+	border: thick solid lightgray;
+	border-radius: 50%;
+	width: 150px;
+	height: 150px;
+}
+
+#aboutArticle section{
+	display: flex;
+	flex-direction: column;
+}
+
+
+#aboutEndMessage{
+	display: block;
+	
 	width: 150px;
 	border: thick solid lightgray;
 	border-radius: 50%;
+	background: #fed136;
+	margin: 0 auto 100px;
+}
+
+#aboutEndMessage p{
+	text-align: center;
+	font-family: montserrat;
+	font-weight: bold;
+	color: white;
+	padding: 39px 21px;
+	margin: 0;
 }
 
 .textLeft{
-	padding: 0;
+	position: absolute;
+	padding: 0 200px 0 0;
 	float: left;
-	width: 20%;
+	max-width: 350px;
+	margin: 0 45% 0 20%;
+}
+
+.textLeft h3{
 	text-align: right;
+	padding-top: 0px;
+}
+
+.textLeft p{
+	 text-align: right;
 }
 
 
 .textRight{
-	padding: 0;
+	position: absolute;
+	padding: 0 0 0 200px;
 	float: right;
-	width: 20%;
+	max-width: 350px;
+	margin: 0 20% 0 45%;
+}
+
+.textRight h3{
+	text-align: left;
+	padding-top: 0px;
+}
+
+.textRight p{
 	text-align: left;
 }
 
@@ -211,7 +286,6 @@ p{
 
 footer{
 	font-family: montserrat;
-	display: block;
 	text-align: center;
 	font-size: 14px;
 }
@@ -225,7 +299,7 @@ footer p{
 	font-family: montserrat;
 	font-size: 14px;
 	color: #212529;
-	padding: 30px 0% 30px 12%;
+	padding: 30px 0% 30px 10%;
 }
 
 footer a{
@@ -236,6 +310,6 @@ footer a{
 
 .footerLinks{
 	float: right;
-	padding: 30px 12% 30px 0%;
+	padding: 30px 10% 30px 0%;
 }
 
