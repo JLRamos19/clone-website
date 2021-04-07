@@ -55,6 +55,15 @@ h3{
 	padding: 15px 0px;
 }
 
+h4{
+	font-family: montserrat;
+	font-weight: bold;
+	color: white;
+	font-size: 40px;
+	padding-top: 90px;
+	padding-bottom: 20px;
+}
+
 /* Menu */
 
 #homeHeader{
@@ -69,7 +78,7 @@ nav ul{
 }
 
 .barMenu{
-	background-color: #212529;
+	background-color: black;
 }
 
 #Studio-tab{
@@ -280,6 +289,61 @@ article p{
 
 #teamBottomParagraph{
 	margin: 0 23%;
+}
+
+/*-- Contact --*/
+
+#contactMain{
+	height: 700px;
+	width: 100%;
+	background-image: url('https://clone-webpage.s3.amazonaws.com/images/map-image.png');
+	background-color: #212529;
+	background-size: auto;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+/*-- Forms --*/
+
+#contactMain button{
+	margin: 0 40%;
+	min-width: 220px;
+}
+
+#contactForm{
+	margin: 60px 10%;
+}
+
+#contactForm input{
+	width: 90%;
+	text-align: left;
+	padding-left: 25px;
+	font-family: montserrat;
+	font-weight: bold;
+	font-size: 18px;
+	border-radius: 5px; 
+	border: none;
+}
+
+#contactInputLeft{
+	float: left;
+	width: 50%;
+}
+
+#contactInputLeft input{
+	height: 70px;
+	margin: 0 0 20px;
+	
+}
+
+#contactInputRight{
+	float: right;
+	width: 50%;
+}
+
+#contactMessage{
+	height: 250px;
+	
 }
 
 /*-- Footer --*/
