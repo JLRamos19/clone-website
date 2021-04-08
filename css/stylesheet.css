@@ -199,19 +199,22 @@ article p{
 	height: 400px;
 }
 
+
 .aboutImageBox{
-	
+	border-left: 2px solid lightgray;
+	margin-left: 50%;
+	height: 100%;
 }
 .aboutBlock{
 	display: flex;
 	flex-direction: column;
 }
 #aboutArticle img{
-	margin: auto;
 	border: thick solid lightgray;
 	border-radius: 50%;
 	width: 150px;
 	height: 150px;
+	margin-left: -100%;
 }
 
 #aboutArticle section{
@@ -314,7 +317,7 @@ article p{
 	margin: 60px 10%;
 }
 
-#contactForm input{
+#contactForm input, textarea{
 	width: 90%;
 	text-align: left;
 	padding-left: 25px;
@@ -342,8 +345,11 @@ article p{
 }
 
 #contactMessage{
-	height: 250px;
-	
+	height: 230px;
+	padding-top: 20px;
+	padding-right: 25px;
+	resize: none;
+	width: 85%;
 }
 
 /*-- Footer --*/
