@@ -14,16 +14,13 @@
 		<header>
 			<nav>
 				<ul class="barMenu">
-					<div class="menu">
 						<li><a id="Studio-tab" href="index.html">STUDIO</a></li>
-						<div class="right-alignMenu">
-							<li><a href="index.html">SERVICES</a></li>
-							<li><a href="portfolio.html">PORTFOLIO</a></li>
-							<li><a href="about.html">ABOUT</a></li>
-							<li><a href="team.html">TEAM</a></li>
-							<li><a href="contact.html">CONTACT</a></li>
-						</div>
-					</div>
+						<li class="right-alignMenu">
+							<a href="index.html">SERVICES</a>
+							<a href="portfolio.html">PORTFOLIO</a>
+							<a href="about.html">ABOUT</a>
+							<a href="team.html">TEAM</a>
+							<a href="contact.html">CONTACT</a></li>
 				</ul>
 			</nav>
 		</header>
@@ -34,19 +31,19 @@
 		
 			<div id="portfolioTop">
 			<section class="portfolioSection">
-				<img src="https://clone-webpage.s3.amazonaws.com/images/portfolio/01-thumbnail.jpg" alt="Clothes Hanging">
+				<img src="https://clone-webpage.s3.amazonaws.com/images/portfolio/01-thumbnail.jpg" alt="Clothes Hanging" id="thumbnail1">
 				<h3>Threads</h3>
 				<p class="p-italic">Illustration</p>
 			</section>
 				
 			<section class="portfolioSection">
-				<img src="https://clone-webpage.s3.amazonaws.com/images/portfolio/02-thumbnail.jpg" alt="Person Standing on Rock Holding Flag">
+				<img src="https://clone-webpage.s3.amazonaws.com/images/portfolio/02-thumbnail.jpg" alt="Person Standing on Rock Holding Flag" id="thumbnail2">
 				<h3>Explore</h3>
 				<p class="p-italic">Graphic Design</p>
 			</section>
 				
 			<section class="portfolioSection">
-				<img src="https://clone-webpage.s3.amazonaws.com/images/portfolio/03-thumbnail.jpg" alt="Shoe and Wooden Letters">
+				<img src="https://clone-webpage.s3.amazonaws.com/images/portfolio/03-thumbnail.jpg" alt="Shoe and Wooden Letters" id="thumbnail3">
 				<h3>Finish</h3>
 				<p class="p-italic">Identity</p>
 			</section>
@@ -54,25 +51,55 @@
 			
 			<div id="portfolioBottom">	
 			<section class="portfolioSection">
-				<img src="https://clone-webpage.s3.amazonaws.com/images/portfolio/04-thumbnail.jpg" alt="Personal Belongings">
+				<img src="https://clone-webpage.s3.amazonaws.com/images/portfolio/04-thumbnail.jpg" alt="Personal Belongings" id="thumbnail4">
 				<h3>Lines</h3>
 				<p class="p-italic">Branding</p>
 			</section>
 				
 			<section class="portfolioSection">
-				<img src="https://clone-webpage.s3.amazonaws.com/images/portfolio/05-thumbnail.jpg" alt="Laptop, Notebook and Glasses">
+				<img src="https://clone-webpage.s3.amazonaws.com/images/portfolio/05-thumbnail.jpg" alt="Laptop, Notebook and Glasses" id="thumbnail5">
 				<h3>Southwest</h3>
 				<p class="p-italic">Website Design</p>
 			</section>
 				
 			<section class="portfolioSection">
-				<img src="https://clone-webpage.s3.amazonaws.com/images/portfolio/06-thumbnail.jpg" alt="Hand Holding Phone Taking Picture of Arc de Triomphe">
+				<img src="https://clone-webpage.s3.amazonaws.com/images/portfolio/06-thumbnail.jpg" alt="Hand Holding Phone Taking Picture of Arc de Triomphe" id="thumbnail6">
 				<h3>Window</h3>
 				<p class="p-italic">Photography</p>
 			</section>
 			</div>
 		
 		</article>
+		
+		<div class="largeImages" id="largeImage1">
+		<img src="https://clone-webpage.s3.amazonaws.com/images/portfolio/01-full.jpg" alt="Clothes Hanging" height="96%">
+		<span class="closeImage">&times;</span>
+		</div>
+		
+		<div class="largeImages" id="largeImage2">
+		<img src="https://clone-webpage.s3.amazonaws.com/images/portfolio/02-full.jpg" alt="Person Standing on Rock Holding Flag">
+		<span class="closeImage">&times;</span>
+		</div>
+		
+		<div class="largeImages" id="largeImage3">
+		<img src="https://clone-webpage.s3.amazonaws.com/images/portfolio/03-full.jpg" alt="Shoe and Wooden Letters">
+		<span class="closeImage">&times;</span>
+		</div>
+		
+		<div class="largeImages" id="largeImage4">
+		<img src="https://clone-webpage.s3.amazonaws.com/images/portfolio/04-full.jpg" alt="Personal Belongings">
+		<span class="closeImage">&times;</span>
+		</div>
+		
+		<div class="largeImages" id="largeImage5">
+		<img src="https://clone-webpage.s3.amazonaws.com/images/portfolio/05-full.jpg" alt="Laptop, Notebook and Glasses">
+		<span class="closeImage">&times;</span>
+		</div>
+		
+		<div class="largeImages" id="largeImage6">
+		<img src="https://clone-webpage.s3.amazonaws.com/images/portfolio/06-full.jpg" alt="Hand Holding Phone Taking Picture of Arc de Triomphe">
+		<span class="closeImage">&times;</span>
+		</div>
 		
 		<footer class="borderedFooter">
 			<p>Copyright © Your Website 2020</p>
@@ -82,6 +109,119 @@
 				<a href="">Terms of Use</a>
 			</div>
 		</footer>
+		
+		<script>
+			
+			var largeimg1 = document.getElementById('largeImage1');
+			var largeimg2 = document.getElementById('largeImage2');
+			var largeimg3 = document.getElementById('largeImage3');
+			var largeimg4 = document.getElementById('largeImage4');
+			var largeimg5 = document.getElementById('largeImage5');
+			var largeimg6 = document.getElementById('largeImage6');
+			
+			var thumbnail1 = document.getElementById('thumbnail1');
+			var thumbnail2 = document.getElementById('thumbnail2');
+			var thumbnail3 = document.getElementById('thumbnail3');
+			var thumbnail4 = document.getElementById('thumbnail4');
+			var thumbnail5 = document.getElementById('thumbnail5');
+			var thumbnail6 = document.getElementById('thumbnail6');
+			
+			var closeimg0 = document.getElementsByClassName('closeImage')[0];
+			var closeimg1 = document.getElementsByClassName('closeImage')[1];
+			var closeimg2 = document.getElementsByClassName('closeImage')[2];
+			var closeimg3 = document.getElementsByClassName('closeImage')[3];
+			var closeimg4 = document.getElementsByClassName('closeImage')[4];
+			var closeimg5 = document.getElementsByClassName('closeImage')[5];
+			
+			// Image 1
+			
+			thumbnail1.onclick = function(){
+				largeimg1.style.display = "block";
+			}
+			
+			closeimg0.onclick = function(){
+				largeimg1.style.display = "none";
+			}
+			
+			// Image 2
+			
+			thumbnail2.onclick = function(){
+				largeimg2.style.display = "block";
+			}
+			
+			closeimg1.onclick = function(){
+				largeimg2.style.display = "none";
+			}
+			
+			// Image 3
+			
+			thumbnail3.onclick = function(){
+				largeimg3.style.display = "block";
+			}
+			
+			closeimg2.onclick = function(){
+				largeimg3.style.display = "none";
+			}
+			
+			// Image 4
+			
+			thumbnail4.onclick = function(){
+				largeimg4.style.display = "block";
+			}
+			
+			closeimg3.onclick = function(){
+				largeimg4.style.display = "none";
+			}
+			
+			// Image 5
+			
+			thumbnail5.onclick = function(){
+				largeimg5.style.display = "block";
+			}
+			
+			closeimg4.onclick = function(){
+				largeimg5.style.display = "none";
+			}
+			
+			// Image 6
+			
+			thumbnail6.onclick = function(){
+				largeimg6.style.display = "block";
+			}
+			
+			closeimg5.onclick = function(){
+				largeimg6.style.display = "none";
+			}
+			
+			// Click outside of large image to close
+			
+			window.onclick = function(event){
+				if (event.target == largeimg1) {
+					largeimg1.style.display = "none";
+				}
+				
+				if (event.target == largeimg2) {
+					largeimg2.style.display = "none";
+				}
+				
+				if (event.target == largeimg3) {
+					largeimg3.style.display = "none";
+				}
+				
+				if (event.target == largeimg4) {
+					largeimg4.style.display = "none";
+				}
+				
+				if (event.target == largeimg5) {
+					largeimg5.style.display = "none";
+				}
+				
+				if (event.target == largeimg6) {
+					largeimg6.style.display = "none";
+				}
+			}
+			
+		</script>
 		
 	</body>
 	

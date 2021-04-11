@@ -28,12 +28,34 @@ section p{
 
 .p-italic{
 	font-style: italic;
+	animation: fadein-p .5s;
 }
 
 p{
 	font-family: roboto slab;
 	color: gray;
 	font-size: 20px;
+	
+}
+
+@keyframes fadein-p{
+	0%{
+		opacity: 0;
+	}
+	50%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}
+}
+
+/* Forms */
+
+@keyframes fadeinForm{
+	0%{opacity: 0}
+	33%{opacity: 0}
+	100%{opacity: 1}
 }
 
 /* Headings */
@@ -47,7 +69,9 @@ h2{
 	padding: 90px 0px 10px 0px;
 	font-weight: bold;
 	font-size: 40px;
+	animation: fadein .25s;
 }
+
 
 h3{
 	font-size: 24px;
@@ -62,6 +86,16 @@ h4{
 	font-size: 40px;
 	padding-top: 90px;
 	padding-bottom: 20px;
+	animation: fadein .25s;
+}
+
+@keyframes fadein{
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
 }
 
 /* Menu */
@@ -77,42 +111,79 @@ nav ul{
 	list-style: none;
 }
 
-.barMenu{
-	background-color: black;
-}
-
 #Studio-tab{
+	padding-top: 20px;
+	float: left;
 	color: #fed136;
 	font-weight: bold;
 	letter-spacing: 1px;
 	font-size: 24px;
+	animation: none;
 }
 
 .right-alignMenu{
 	float: right;
 }
 
-.menu{
+#homeMenu{
+	background-color: transparent;
+}
+
+.barMenu{
 	overflow: hidden;
-	padding: 0 5%;
+	padding: 0 10%;
+	background-color: black;
 }
 
-.menu li{
-	float: left;
-	padding: 25px 15px 20px 15px;
-}
-
-.menu a{
+.barMenu a{
 	text-align: center;
 	text-decoration: none;
 	color: #f8f9fa;
 	font-family: montserrat;
 }
 
+.barMenu a:hover{
+	color: #fed136;
+	animation: hoverMenu .25s;
+}
+
+.barMenu a:not(:hover){
+	color: #f8f9fa;
+	animation: nothoverMenu .25s;
+}
+
+.right-alignMenu a{
+	float: left;
+	padding: 25px 15px 20px 15px;
+}
+
+@keyframes hoverMenu{
+	from{
+		color: #f8f9fa;
+	}
+	to{
+		color: #fed136;
+	}
+}
+
+@keyframes nothoverMenu{
+	from{
+		color: #fed136;
+	}
+	to{
+		color: #f8f9fa;
+	}
+}
+
 .greetingMsg{
 	padding-top: 200px;
 	color: white;
 	text-align: center;
+}
+
+@keyframes fadeinGreeting{
+	from{opacity: 0}
+	to{opacity: 1}
 }
 
 article{
@@ -122,14 +193,24 @@ article{
 
 /*-- Welcome message --*/
 
+.greetingMsg h1{
+	animation: fadeinGreeting .50s;
+}
 
 .greetingMsg p{
 	font-family: montserrat;
 	color: white;
 	font-size: 72px;
 	font-weight: bold;
-	padding: 40px 0px
+	padding: 40px 0px;
+	animation: fadeinGreeting .66s;
 }
+
+.greetingMsg button{
+	animation: fadeinGreeting 1s;
+}
+
+/*-- Button --*/
 
 button{
 	color: white;
@@ -143,7 +224,40 @@ button{
 	background-color: #fed136;
  }
 
+button:hover{
+	animation: changeButtonColor .25s;
+	background-color: orange;
+}
+
+button:not(:hover){
+	animation: changeButtonColorBack .25s;
+	background-color: #fed136;
+}
+
+@keyframes changeButtonColor{
+	from{
+		background-color: #fed136;
+	}
+	
+	to{
+		background-color: orange;
+	}
+}
+
+@keyframes changeButtonColorBack{
+	from{
+		background-color: orange;
+	}
+	
+	to{
+		background-color: #fed136;
+	}
+}
+
 /*-- Article --*/
+
+
+
 article p{
 	padding-bottom: 50px;
 }
@@ -152,7 +266,15 @@ article p{
 
 /*-- Sections --*/
 
+section{
+	animation: fadeinArticle .75s;
+}
 
+@keyframes fadeinArticle{
+	0%{opacity: 0}
+	66%{opacity: 0}
+	100%{opacity: 1}
+}
 .Services{
 	display: flex;
 	padding: 0% 10%;
@@ -188,10 +310,38 @@ article p{
 
 .portfolioSection img{
 	width: 100%;
+	cursor: pointer;
 }
 
 .portfolioSection p{
 	margin: -20px 0;
+}
+
+/*-- Large Images --*/
+
+.largeImages{
+	display: none;
+	position: fixed;
+	z-index: 1;
+	left: 0;
+	top: 0;
+	padding-top: 1%;
+	padding-bottom: 1%;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: rgba(0,0,0,0.75);
+}
+
+/*-- Close Button on Large Images --*/
+
+.closeImage{
+	font-size: 50px;
+	font-weight: bolder;
+	float: right;
+	color: white;
+	padding-right: 5%;
+	cursor: pointer;
 }
 
 /*-- About --*/
@@ -204,7 +354,15 @@ article p{
 	border-left: 2px solid lightgray;
 	margin-left: 50%;
 	height: 100%;
+	animation: fadeinAboutImage .75s;
 }
+
+@keyframes fadeinAboutImage{
+	0%{opacity: 0}
+	50%{opacity: 0}
+	100%{opacity: 1}
+}
+
 .aboutBlock{
 	display: flex;
 	flex-direction: column;
@@ -224,22 +382,18 @@ article p{
 
 
 #aboutEndMessage{
-	display: block;
-	
-	width: 150px;
+	display: flex;
+	width: 70px;
+	height: 70px;
 	border: thick solid lightgray;
 	border-radius: 50%;
 	background: #fed136;
 	margin: 0 auto 100px;
-}
-
-#aboutEndMessage p{
-	text-align: center;
 	font-family: montserrat;
 	font-weight: bold;
+	font-size: 17px;
 	color: white;
-	padding: 39px 21px;
-	margin: 0;
+	padding: 40px 40px;
 }
 
 .textLeft{
@@ -284,14 +438,24 @@ article p{
 	justify-content: center;
 }
 
+#teamArticle section{
+	margin-left: 2.5%;
+	margin-right: 2.5%;
+}
+
+#teamArticle p{
+	padding-bottom: 0;
+}
+
 .teamProfilePictures{
 	width: 200px;
 	border-radius: 50%;
 	border: thick solid lightgray;
+	margin-top: 50px;
 }
 
 #teamBottomParagraph{
-	margin: 0 23%;
+	margin: 50px 23% 100px;
 }
 
 /*-- Contact --*/
@@ -311,10 +475,12 @@ article p{
 #contactMain button{
 	margin: 0 40%;
 	min-width: 220px;
+	animation: fadeinForm 1.75s;
 }
 
 #contactForm{
 	margin: 60px 10%;
+	animation: fadeinForm 1.5s;
 }
 
 #contactForm input, textarea{
