@@ -346,15 +346,18 @@ section{
 
 /*-- About --*/
 #aboutArticle div{
-	height: 400px;
+	margin: auto;
+}
+#line-images{
+	border: 1px solid lightgray;
+	position: absolute;
+	height: 1600px;
+	width: 0;
 }
 
-
 .aboutImageBox{
-	border-left: 2px solid lightgray;
-	margin-left: 50%;
-	height: 100%;
 	animation: fadeinAboutImage .75s;
+	position: absolute;
 }
 
 @keyframes fadeinAboutImage{
@@ -365,19 +368,14 @@ section{
 
 .aboutBlock{
 	display: flex;
-	flex-direction: column;
+	height: 400px;
+	justify-content: center;
 }
 #aboutArticle img{
 	border: thick solid lightgray;
 	border-radius: 50%;
 	width: 150px;
 	height: 150px;
-	margin-left: -100%;
-}
-
-#aboutArticle section{
-	display: flex;
-	flex-direction: column;
 }
 
 
@@ -397,11 +395,8 @@ section{
 }
 
 .textLeft{
-	position: absolute;
-	padding: 0 200px 0 0;
-	float: left;
 	max-width: 350px;
-	margin: 0 45% 0 20%;
+	padding-right: 600px;
 }
 
 .textLeft h3{
@@ -415,11 +410,8 @@ section{
 
 
 .textRight{
-	position: absolute;
-	padding: 0 0 0 200px;
-	float: right;
 	max-width: 350px;
-	margin: 0 20% 0 45%;
+	padding-left: 600px;
 }
 
 .textRight h3{
