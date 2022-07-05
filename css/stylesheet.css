@@ -349,6 +349,7 @@ section{
 	margin: auto;
 }
 #line-images{
+	animation: fadeinAboutImage .75s;
 	border: 1px solid lightgray;
 	position: absolute;
 	height: 1600px;
